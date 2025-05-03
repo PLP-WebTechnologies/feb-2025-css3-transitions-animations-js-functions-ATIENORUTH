@@ -1,0 +1,23 @@
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 50px;
+    transition: all 1s ease;
+  }
+  
+  @keyframes moveBox {
+    0% {
+      transform: translateX(0);
+      background-color: blue;
+    }
+    100% {
+      transform: translateX(300px);
+      background-color: red;
+    }
+  }
+  
+  .animate {
+    animation: moveBox 2s forwards;
+  }
+  
